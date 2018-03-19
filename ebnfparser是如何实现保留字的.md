@@ -115,7 +115,7 @@ python ./test_lang.py arith "1 add 2" --testTk
 ```
 如果你在命令行里跑这个代码，你会发现输出顶部是绿色的，很舒服，绿色让我们的生活更过得去，不是吗？  
 
-[![castmap](https://github.com/thautwarm/ebnfparser-dev-notes/tree/master/code_examples/cast_map/cast_map.png)](https://github.com/thautwarm/ebnfparser-dev-notes/tree/master/code_examples/cast_map/cast_map.png)
+[![castmap](https://github.com/thautwarm/ebnfparser-dev-notes/blob/master/code_examples/cast_map/cast_map.png)](https://github.com/thautwarm/ebnfparser-dev-notes/blob/master/code_examples/cast_map/cast_map.png)
 
 再跑一个。
 
