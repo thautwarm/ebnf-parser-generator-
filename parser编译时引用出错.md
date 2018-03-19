@@ -43,7 +43,7 @@ S ::= ('a' 'b' 'c')*;
 ruiko grammar.ruiko compiling_ref1.py --test
 ```
 
-生成如下文件
+生成如下文见于[directory](https://github.com/thautwarm/ebnfparser-dev-notes/tree/master/code_examples/compiling_references)
 
 - compiling_ref1.py
 - test_lang.py
