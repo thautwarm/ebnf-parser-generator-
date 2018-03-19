@@ -10,12 +10,12 @@ keyword := 'sub', 'mul', 'div', 'add';
 避免将 `subdiv` 这样的字符串分成sub和div两个。 
 */
 
-atom     ::= symbol | number | '(' arith ')';
+atom       ::= symbol | number | '(' arith ')';
 
-factor   ::= ['-'] atom;
+factor     ::= ['-'] atom;
 
-mulOrDiv ::= factor (('div' | 'mul') factor)*;
+mulOrDiv   ::= factor (('div' | 'mul') factor)*;
 
-arith    ::= mulOrDiv (('add' | 'sub') mulOrDiv)*;
+arith      ::= mulOrDiv (('add' | 'sub') mulOrDiv)*;
 
 statements ::= arith (';' arith)*;

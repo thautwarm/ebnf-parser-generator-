@@ -3,7 +3,7 @@
 这并不是一个需要多讲几句话的问题。
 首先，我们通常需要区分的是变量名和关键字，但是变量名的定义是包括关键字的。
 
-处理方法非常之多，我简要描述几种。
+处理方法非常之多，我简要描述几种(会慢慢更新, 第一种方法是最高效最鲁棒的)
 
 
 ## cast map
@@ -26,13 +26,13 @@ keyword := 'sub', 'mul', 'div', 'add';
 避免将 `subdiv` 这样的字符串分成sub和div两个。 
 */
 
-atom   ::= number | '(' arith ')';
+atom     ::= number | '(' arith ')';
 
 factor   ::= ['-'] atom;
 
 mulOrDiv ::= factor (('div' | 'mul') factor)*;
 
-arith ::= mulOrDiv (('add' | 'sub') mulOrDiv)*;
+arith    ::= mulOrDiv (('add' | 'sub') mulOrDiv)*;
 ```
 
 然后生成一下
