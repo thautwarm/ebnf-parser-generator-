@@ -114,10 +114,10 @@ python ./test_lang.py arith "1 add 2" --testTk
 
 ```
 如果你在命令行里跑这个代码，你会发现输出顶部是绿色的，很舒服，绿色让我们的生活更过得去，不是吗？  
-[![cast-map])(https://github.com/thautwarm/ebnfparser-dev-notes/tree/master/code_examples/cast_map/cast_map.png)](https://github.com/thautwarm/ebnfparser-dev-notes/tree/master/code_examples/cast_map/cast_map.png)
+[![cast-map](https://github.com/thautwarm/ebnfparser-dev-notes/tree/master/code_examples/cast_map/cast_map.png)](https://github.com/thautwarm/ebnfparser-dev-notes/tree/master/code_examples/cast_map/cast_map.png)
 
 再跑一个。
-[![cast-map2](https://github.com/thautwarm/ebnfparser-dev-notes/tree/master/code_examples/cast_map/cast_map2.png)](https://github.com/thautwarm/ebnfparser-dev-notes/tree/master/code_examples/cast_map/cast_map2.png)
+[![cast-map2](https://github.com/thautwarm/ebnfparser-dev-notes/blob/master/code_examples/cast_map/cast_map2.png)](https://github.com/thautwarm/ebnfparser-dev-notes/blob/master/code_examples/cast_map/cast_map2.png)
 
 
 对了，提一句，在parser里定死运算符优先级，真的不是一个好的习惯。建议大家不要学习CPython等众多没有前途的语言的做法(自然ebnfparser也是没有什么钱途的=_=  
