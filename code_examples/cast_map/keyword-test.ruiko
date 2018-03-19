@@ -1,0 +1,21 @@
+Ignore [space]
+
+space   := R'\s+';
+number  := R'\d+';
+symbol  := R'[a-zA-Z_]{1}[a-zA-Z_0-9]*';
+keyword := 'sub', 'mul', 'div', 'add'; 
+
+/* 
+注意将keyword定义在symbol之后，
+避免将 `subdiv` 这样的字符串分成sub和div两个。 
+*/
+
+atom     ::= symbol | number | '(' arith ')';
+
+factor   ::= ['-'] atom;
+
+mulOrDiv ::= factor (('div' | 'mul') factor)*;
+
+arith    ::= mulOrDiv (('add' | 'sub') mulOrDiv)*;
+
+statements ::= arith (';' arith)*;
