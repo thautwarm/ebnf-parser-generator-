@@ -1,0 +1,13 @@
+ignore [space]
+
+space   := R'\s+';
+
+number  := R'\d+'; 
+
+decimal ::= number ['.' number];
+
+atom ::= decimal | '(' arith ')';
+
+factor ::= ['-'|'+'] atom;
+
+arith ::= factor (('+' | '-' | '*' | '//' | '/') factor)*;

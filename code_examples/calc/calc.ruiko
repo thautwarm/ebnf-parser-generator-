@@ -1,0 +1,17 @@
+ignore[space]
+
+space   := R'\s+';
+
+number  := R'\d+';  # := 定义的是一个词法结构。通常它是含类型的，但我们这次不用考虑。
+
+decimal ::= number ['.' number];  # ::= 定义的是一个语法结构。
+
+atom ::= decimal | '(' arith ')';
+
+factor ::= ['-'|'+'] atom;
+
+power ::= factor ('**' factor)*;
+
+mulDiv ::= power ('//' power|'/' power|'*' power)*;
+
+arith::= mulDiv ('+' mulDiv|'-' mulDiv)*;
